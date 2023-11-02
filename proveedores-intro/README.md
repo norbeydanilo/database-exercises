@@ -169,7 +169,7 @@ CREATE TABLE
     );
 ```
 
-**Usando DML defina la estructura de datos. Ejecute el fichero [`op-proveedores.sql`](op-proveedor.sql) en la shell de MySQL para insertar datos en las tablas.**
+**Usando DML defina la estructura de datos. Ejecute el fichero [`op-proveedores.sql`](op-proveedores.sql) en la shell de MySQL para insertar datos en las tablas.**
 
 Formas de insertar:
 
