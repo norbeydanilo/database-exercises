@@ -66,12 +66,13 @@ CREATE TABLE
     );
 
 -- Crea la tabla 'suministra' con los campos 'cod_prov', 'cod_pieza', 'fecha_hora' y 'cantidad'
+-- DATETIME(6) incluye microsegundos
 
 CREATE TABLE
     suministra (
         cod_prov INT NOT NULL,
         cod_pieza INT NOT NULL,
-        fecha_hora DATETIME NOT NULL,
+        fecha_hora DATETIME(6) NOT NULL,
         cantidad INT NOT NULL CHECK (cantidad > 0),
         FOREIGN KEY (cod_prov) REFERENCES proveedor(cod_prov) ON DELETE CASCADE,
         FOREIGN KEY (cod_pieza) REFERENCES pieza(cod_pieza) ON DELETE CASCADE,

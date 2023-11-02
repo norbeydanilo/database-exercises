@@ -45,6 +45,8 @@ Tenemos que diseñar una base de datos sobre proveedores y disponemos de la sigu
 
 ## SQL -- MySQL
 
+### DDL para crear la base de datos
+
 **Usando DDL defina la estructura de datos. Ejecute el fichero [`proveedores.sql`](proveedores.sql) en la shell de MySQL.**
 
 **Para su entendimiento puede seguir las instrucciones y pasos a continuación:**
@@ -157,7 +159,7 @@ CREATE TABLE
     suministra (
         cod_prov INT NOT NULL,
         cod_pieza INT NOT NULL,
-        fecha_hora DATETIME NOT NULL,
+        fecha_hora DATETIME(6) NOT NULL, -- hasta microsegundos
         cantidad INT NOT NULL CHECK (cantidad > 0),
         FOREIGN KEY (cod_prov) REFERENCES proveedor(cod_prov) ON DELETE CASCADE,
         FOREIGN KEY (cod_pieza) REFERENCES pieza(cod_pieza) ON DELETE CASCADE,
@@ -169,7 +171,9 @@ CREATE TABLE
     );
 ```
 
-**Usando DML defina la estructura de datos. Ejecute el fichero [`op-proveedores.sql`](op-proveedores.sql) en la shell de MySQL para insertar datos en las tablas.**
+### DML para Insertar
+
+**Usando DML para insertar datos. Ejecute el fichero [`in-proveedores.sql`](op-proveedores.sql) en la shell de MySQL para insertar datos en las tablas.**
 
 Formas de insertar:
 
@@ -194,6 +198,8 @@ VALUES (
         'Natural'
     );
 ```
+
+O de la forma:
 
 ```sql
 INSERT INTO
@@ -221,3 +227,13 @@ VALUES (
         'Natural'
     );
 ```
+
+### DML para Actualizar
+
+**Usando DML para actualizar datos. Ejecute el fichero [`up-proveedor.sql`](up-proveedor.sql) en la shell de MySQL para actualizar datos en las tablas.**
+
+### DML para Eliminar
+
+**Usando DML para eliminar datos. Ejecute el fichero [`del-proveedor.sql`](del-proveedor.sql) en la shell de MySQL para eliminar datos en las tablas.**
+
+### Algebra Relacional -- Consultas
