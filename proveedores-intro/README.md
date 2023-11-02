@@ -173,7 +173,7 @@ CREATE TABLE
 
 ### DML para Insertar
 
-**Usando DML para insertar datos. Ejecute el fichero [`in-proveedores.sql`](op-proveedores.sql) en la shell de MySQL para insertar datos en las tablas.**
+**Usando DML para insertar datos. Ejecute el fichero [`in-proveedores.sql`](in-proveedores.sql) en la shell de MySQL para insertar datos en las tablas.**
 
 Formas de insertar:
 
