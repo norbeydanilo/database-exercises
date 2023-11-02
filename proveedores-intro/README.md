@@ -45,7 +45,7 @@ Tenemos que diseñar una base de datos sobre proveedores y disponemos de la sigu
 
 ## SQL -- MySQL
 
-**Usando DDL defina la estructura de datos. Ejecute el fichero [`proveedores.sql`](.) en la shell de MySQL.**
+**Usando DDL defina la estructura de datos. Ejecute el fichero [`proveedores.sql`](proveedores.sql) en la shell de MySQL.**
 
 **Para su entendimiento puede seguir las instrucciones y pasos a continuación:**
 
@@ -169,7 +169,7 @@ CREATE TABLE
     );
 ```
 
-**Usando DML defina la estructura de datos. Ejecute el fichero [`op-proveedores.sql`](.) en la shell de MySQL para insertar datos en las tablas.**
+**Usando DML defina la estructura de datos. Ejecute el fichero [`op-proveedores.sql`](op-proveedor.sql) en la shell de MySQL para insertar datos en las tablas.**
 
 Formas de insertar:
 
