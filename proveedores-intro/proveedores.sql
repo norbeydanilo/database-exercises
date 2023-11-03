@@ -66,6 +66,7 @@ CREATE TABLE
     );
 
 -- Crea la tabla 'suministra' con los campos 'cod_prov', 'cod_pieza', 'fecha_hora' y 'cantidad'
+
 -- DATETIME(6) incluye microsegundos
 
 CREATE TABLE
@@ -82,3 +83,49 @@ CREATE TABLE
             fecha_hora
         )
     );
+
+-- Ejemplo de DDL adcicional -- NO EJECUTAR PARA LA CREACIÓN
+
+-- DROP
+
+DROP TABLE IF EXISTS suministra;
+
+-- ALTER
+
+-- Agregando columnas
+
+ALTER TABLE categoria ADD COLUMN descripcion VARCHAR(255) NOT NULL;
+
+ALTER TABLE proveedor ADD COLUMN telefono VARCHAR(15);
+
+-- Eliminando columnas
+
+ALTER TABLE categoria DROP COLUMN descripcion;
+
+ALTER TABLE proveedor DROP COLUMN telefono;
+
+-- CONSTRAINTS
+
+-- Descripción de cómo se creó la tabla
+
+SHOW CREATE TABLE pnatural;
+
+-- Primero, elimina la clave foránea existente
+
+ALTER TABLE pnatural DROP FOREIGN KEY pnatural_ibfk_1;
+
+-- Luego, agrega la clave foránea con ON DELETE CASCADE y ON UPDATE CASCADE
+
+ALTER TABLE pnatural
+ADD
+    CONSTRAINT pnatural_ibfk_1 FOREIGN KEY (cod_prov) REFERENCES proveedor(cod_prov) ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- Para tabla suministra
+
+SHOW CREATE TABLE suministra;
+
+ALTER TABLE suministra DROP FOREIGN KEY suministra_ibfk_1;
+
+ALTER TABLE suministra
+ADD
+    CONSTRAINT suministra_ibfk_1 FOREIGN KEY (cod_prov) REFERENCES proveedor(cod_prov) ON DELETE CASCADE ON UPDATE CASCADE;
