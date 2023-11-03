@@ -230,7 +230,7 @@ VALUES (
 
 ### DML para Actualizar
 
-**Usando DML para actualizar datos. Ejecute el fichero [`up-proveedor.sql`](up-proveedor.sql) en la shell de MySQL para actualizar datos en las tablas.**
+**Usando DML para actualizar datos. Ejecute el fichero [`up-proveedores.sql`](up-proveedores.sql) en la shell de MySQL para actualizar datos en las tablas.**
 
 Actualizando un conjunto de atributos:
 
@@ -290,7 +290,7 @@ Haga lo mismo para la(s) tabla(s) en la(s) que el `código del proveedor` es for
 
 ### DML para Eliminar
 
-**Usando DML para eliminar datos. Ejecute el fichero [`del-proveedor.sql`](del-proveedor.sql) en la shell de MySQL para eliminar datos en las tablas.**
+**Usando DML para eliminar datos. Ejecute el fichero [`del-proveedores.sql`](del-proveedores.sql) en la shell de MySQL para eliminar datos en las tablas.**
 
 Ejemplos de eliminación de tuplas:
 
@@ -431,6 +431,36 @@ FROM proveedor
 
 **Usando las funciones de agregación para realizar consultas. Ejecute el fichero [`agg-proveedores.sql`](agg-proveedores.sql) en la shell de MySQL para realizar consultas.**
 
+1. `SELECT COUNT(*) FROM suministra WHERE cantidad > 10;`
+   Esta sentencia cuenta el número total de filas en la tabla `suministra` donde el valor de `cantidad` es mayor que 10.
+
+2. `SELECT SUM(cantidad) FROM suministra WHERE cod_prov = 123;`
+   Esta sentencia suma todos los valores de `cantidad` en la tabla `suministra` donde `cod_prov` es igual a 123.
+
+3. `SELECT AVG(cantidad) FROM suministra WHERE cod_prov = 123;`
+   Esta sentencia calcula el promedio de los valores de `cantidad` en la tabla `suministra` donde `cod_prov` es igual a 123.
+
+4. `SELECT MIN(cantidad), MAX(cantidad) FROM suministra;`
+   Esta sentencia selecciona el valor mínimo y máximo de `cantidad` en la tabla `suministra`.
+
+5. `SELECT cod_prov, COUNT(*) FROM suministra GROUP BY cod_prov;`
+   Esta sentencia cuenta el número total de filas para cada `cod_prov` en la tabla `suministra`.
+
+6. `SELECT cod_prov, COUNT(*) AS total FROM suministra GROUP BY cod_prov HAVING total > 1;`
+   Esta sentencia selecciona `cod_prov` y cuenta el número total de filas para cada `cod_prov` en la tabla `suministra`, pero solo incluye aquellos `cod_prov` que tienen más de una fila.
+
+7. `SELECT cod_prov, COUNT(*) AS total FROM suministra GROUP BY cod_prov HAVING total > 1 ORDER BY total;`
+   Similar a la anterior, pero ordena los resultados por el conteo total en orden ascendente.
+
+8. `SELECT cod_prov, COUNT(*) AS total FROM suministra GROUP BY cod_prov HAVING total > 1 ORDER BY total DESC;`
+   Similar a la anterior, pero ordena los resultados por el conteo total en orden descendente.
+
+9. `SELECT cod_prov, COUNT(*) AS total FROM suministra GROUP BY cod_prov HAVING total > 1 ORDER BY total DESC LIMIT 1;`
+   Similar a la anterior, pero solo devuelve el `cod_prov` con el mayor conteo total.
+
+10. `SELECT cod_prov, AVG(cantidad) AS promedio FROM suministra GROUP BY cod_prov HAVING promedio > 10;`
+    Esta sentencia selecciona `cod_prov` y calcula el promedio de `cantidad` para cada `cod_prov` en la tabla `suministra`, pero solo incluye aquellos `cod_prov` que tienen un promedio mayor que 10.
+
 ### Subconsultas anidadas
 
 **Usando lo visto respecto a subconsultas anidadas para realizar consultas más avanzadas. Ejecute el fichero [`sub-proveedores.sql`](sub-proveedores.sql) en la shell de MySQL para realizar consultas.**
@@ -522,4 +552,5 @@ En este ejemplo, la consulta `WITH` crea una CTE llamada `suministros_totales` q
 Las CTEs son una forma poderosa de crear consultas más legibles y mantenibles, ya que permiten dividir consultas complejas en partes más manejables.
 
 > Create by Norbey Danilo Muñoz Cañón, 2023.
+>
 > The idea of ​​intellectual property is fundamentally wrong. Knowledge belongs to all people!

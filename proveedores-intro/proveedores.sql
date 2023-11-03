@@ -84,7 +84,7 @@ CREATE TABLE
         )
     );
 
--- Ejemplo de DDL adcicional -- NO EJECUTAR PARA LA CREACIÓN
+-- Ejemplo de DDL adicional -- NO EJECUTAR PARA LA CREACIÓN
 
 -- DROP
 
