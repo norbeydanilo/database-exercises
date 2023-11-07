@@ -94,15 +94,15 @@ doctor_especialidad ||..o{ cita
 
 Diagrama para doctores, pacientes y citas.
 
-![](diagrama-er.svg)
+![](imgs/diagrama-er.svg)
 
 Diagrama mejorado para la necesidad de varias especialidades para cada doctor.
 
-![](diagrama-er-e.svg)
+![](imgs/diagrama-er-e.svg)
 
 Diagrama avanzado que considera aspectos como consultorio, ubicaciones, asignación de consultorio, etc.
 
-![](MER.png)
+![](imgs/MER.png)
 
 ## Modelo Relacional
 

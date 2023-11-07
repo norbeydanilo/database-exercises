@@ -13,7 +13,7 @@ Tenemos que diseñar una base de datos sobre proveedores y disponemos de la sigu
 
 ## Modelo Entidad-Relación
 
-![](MER.png)
+![](imgs/MER.png)
 
 ## Modelo Relacional
 
