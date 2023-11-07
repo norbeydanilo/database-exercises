@@ -18,7 +18,7 @@ EXCEPT
 SELECT cod_prov
 FROM suministra;
 
--- Instersección
+-- Intersección
 
 SELECT cod_prov
 FROM suministra
