@@ -122,7 +122,7 @@ Modelo relacional para caso en el que se emplea múltiples especialiades para un
 
 ## SQL -- MySQL
 
-**Abra el archivo [`citas-basico.sql`](citas-basico.sql) para la creación de la base de datos a través de DDL**
+**Abra el archivo [`citas-basico.sql`](sql/citas-basico.sql) para la creación de la base de datos a través de DDL**
 
 Use el ejemplo de [proveedores](https://github.com/norbeydanilo/database-exercises/tree/main/proveedores-intro) para la creación, modificación, eliminación, consultas a través de DML.
 

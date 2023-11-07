@@ -47,7 +47,7 @@ Tenemos que diseñar una base de datos sobre proveedores y disponemos de la sigu
 
 ### DDL para crear la base de datos
 
-**Usando DDL defina la estructura de datos. Ejecute el fichero [`proveedores.sql`](proveedores.sql) en la shell de MySQL.**
+**Usando DDL defina la estructura de datos. Ejecute el fichero [`proveedores.sql`](sql/proveedores.sql) en la shell de MySQL.**
 
 **Para su entendimiento puede seguir las instrucciones y pasos a continuación:**
 
@@ -173,7 +173,7 @@ CREATE TABLE
 
 ### DML para Insertar
 
-**Usando DML para insertar datos. Ejecute el fichero [`in-proveedores.sql`](in-proveedores.sql) en la shell de MySQL para insertar datos en las tablas.**
+**Usando DML para insertar datos. Ejecute el fichero [`in-proveedores.sql`](sql/in-proveedores.sql) en la shell de MySQL para insertar datos en las tablas.**
 
 Formas de insertar:
 
@@ -230,7 +230,7 @@ VALUES (
 
 ### DML para Actualizar
 
-**Usando DML para actualizar datos. Ejecute el fichero [`up-proveedores.sql`](up-proveedores.sql) en la shell de MySQL para actualizar datos en las tablas.**
+**Usando DML para actualizar datos. Ejecute el fichero [`up-proveedores.sql`](sql/up-proveedores.sql) en la shell de MySQL para actualizar datos en las tablas.**
 
 Actualizando un conjunto de atributos:
 
@@ -290,7 +290,7 @@ Haga lo mismo para la(s) tabla(s) en la(s) que el `código del proveedor` es for
 
 ### DML para Eliminar
 
-**Usando DML para eliminar datos. Ejecute el fichero [`del-proveedores.sql`](del-proveedores.sql) en la shell de MySQL para eliminar datos en las tablas.**
+**Usando DML para eliminar datos. Ejecute el fichero [`del-proveedores.sql`](sql/del-proveedores.sql) en la shell de MySQL para eliminar datos en las tablas.**
 
 Ejemplos de eliminación de tuplas:
 
@@ -304,7 +304,7 @@ Note que la primera clúsula efectuará una eliminación en cascada. Es decir, e
 
 ### Algebra Relacional -- Consultas
 
-**Usando Algebra Relacional para realizar consultas. Ejecute el fichero [`op-proveedores.sql`](op-proveedores.sql) en la shell de MySQL para realizar consultas.**
+**Usando Algebra Relacional para realizar consultas. Ejecute el fichero [`op-proveedores.sql`](sql/op-proveedores.sql) en la shell de MySQL para realizar consultas.**
 
 El álgebra relacional es un conjunto de operaciones que se utilizan para manipular relaciones (tablas) en una base de datos relacional. Explicación breve de cada una de las operaciones con el ejemplo en cuestión:
 
@@ -429,7 +429,7 @@ FROM proveedor
 
 ### Funciones de agregación
 
-**Usando las funciones de agregación para realizar consultas. Ejecute el fichero [`agg-proveedores.sql`](agg-proveedores.sql) en la shell de MySQL para realizar consultas.**
+**Usando las funciones de agregación para realizar consultas. Ejecute el fichero [`agg-proveedores.sql`](sql/agg-proveedores.sql) en la shell de MySQL para realizar consultas.**
 
 1. `SELECT COUNT(*) FROM suministra WHERE cantidad > 10;`
    Esta sentencia cuenta el número total de filas en la tabla `suministra` donde el valor de `cantidad` es mayor que 10.
@@ -463,7 +463,7 @@ FROM proveedor
 
 ### Subconsultas anidadas
 
-**Usando lo visto respecto a subconsultas anidadas para realizar consultas más avanzadas. Ejecute el fichero [`sub-proveedores.sql`](sub-proveedores.sql) en la shell de MySQL para realizar consultas.**
+**Usando lo visto respecto a subconsultas anidadas para realizar consultas más avanzadas. Ejecute el fichero [`sub-proveedores.sql`](sql/sub-proveedores.sql) en la shell de MySQL para realizar consultas.**
 
 Las subconsultas anidadas son consultas que se colocan dentro de otras consultas, generalmente en la cláusula `WHERE` o `HAVING`. Las subconsultas anidadas pueden utilizar los siguientes operadores:
 
