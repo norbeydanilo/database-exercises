@@ -7,6 +7,6 @@ Ejercicios que contemplan el diseño conceptual y lógico de la base de datos a 
 ## Enunciados
 
 * [Proveedores](https://github.com/norbeydanilo/database-exercises/tree/main/proveedores-intro)
-* [Citas](https://github.com/norbeydanilo/database-exercises/tree/main/citas-basico)
+* [Citas](https://github.com/norbeydanilo/database-exercises/tree/main/citas)
 * [Ejercicio 3](#ejercicio-3)
 * [Ejercicio 4](#ejercicio-4)

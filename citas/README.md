@@ -1,4 +1,4 @@
-# Citas básico
+# Citas
 
 ## Enunciado
 
