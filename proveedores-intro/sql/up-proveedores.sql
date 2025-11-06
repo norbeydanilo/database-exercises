@@ -22,4 +22,6 @@ WHERE
 
 -- Primero, actualiza el cod_prov en la tabla proveedor y luego actualiza el cod_prov en la tabla pnatural
 
-UPDATE proveedor SET cod_prov = 124 WHERE cod_prov = 345;
+UPDATE proveedor SET cod_prov = 345 WHERE cod_prov = 124;
+
+SHOW CREATE TABLE pnatural

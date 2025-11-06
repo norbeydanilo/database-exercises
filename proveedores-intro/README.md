@@ -551,6 +551,12 @@ En este ejemplo, la consulta `WITH` crea una CTE llamada `suministros_totales` q
 
 Las CTEs son una forma poderosa de crear consultas más legibles y mantenibles, ya que permiten dividir consultas complejas en partes más manejables.
 
+## SQL - PostgreSQL
+
+**Usando DDL defina la estructura de datos. Ejecute el fichero [`proveedoresPg.sql`](sql/proveedoresPg.sql) en la shell de PostgreSQL.**
+
+Para el resto (DML) usar los ficheros de MySQL.
+
 > Create by Norbey Danilo Muñoz Cañón, 2023.
 >
 > The idea of ​​intellectual property is fundamentally wrong. Knowledge belongs to all people!

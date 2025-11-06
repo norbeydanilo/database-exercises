@@ -1,3 +1,5 @@
+-- MYSQL
+
 -- Elimina la base de datos 'proveedores' si existe
 
 DROP DATABASE IF EXISTS proveedores;
