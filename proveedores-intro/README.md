@@ -391,6 +391,18 @@ FROM proveedor
     JOIN pieza ON suministra.cod_pieza = pieza.cod_pieza;
 ```
 
+Aunque PostgreSQL soporta NATURAL JOIN, es más robusto y claro usar:
+
+✔ JOIN ... ON — cuando los nombres de columnas difieren
+
+✔ JOIN ... USING — cuando los nombres coinciden
+
+```sql
+SELECT *
+FROM tabla1
+JOIN tabla2 USING (id);
+```
+
 10. **LEFT JOIN**: Esta operación combina dos relaciones y devuelve todas las tuplas de la relación izquierda y las tuplas coincidentes de la relación derecha. En SQL, se utiliza la cláusula `LEFT JOIN`.
 
 ```sql
@@ -556,6 +568,10 @@ Las CTEs son una forma poderosa de crear consultas más legibles y mantenibles, 
 **Usando DDL defina la estructura de datos. Ejecute el fichero [`proveedoresPg.sql`](sql/proveedoresPg.sql) en la shell de PostgreSQL.**
 
 Para el resto (DML) usar los ficheros de MySQL.
+
+**Usando DDL para la creación de vistas. Ejecute el fichero [`views.sql`](sql/views.sql).**
+
+**Usando DCL para la roles, privilegios. Ejecute el fichero [`dcl.sql`](sql/dcl.sql).**
 
 > Create by Norbey Danilo Muñoz Cañón, 2023.
 >
